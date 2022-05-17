@@ -1,0 +1,112 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: white;
+
+}
+/*header*/
+.menu{
+    height: 100px;
+    background-color: #14233a;
+}
+.menu-content{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    padding-top: 20px;
+    margin: auto;
+    justify-content: space-between;
+}
+.menu-content img{
+    display: inline-block;
+}
+.menu-content ul{
+    display: flex;
+    color: white;
+    list-style: none;
+}
+.menu-content li{
+    padding: 0px 15px 0px 15px;
+}
+.menu-content a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.menu-content a:hover{
+    transition: 0.5s;
+    color: #ec7200;
+    font-size: 18px;
+}
+.orange a{
+    color: #ec7400;
+}
+.menu-mobile{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+}
+.mobile-nav{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    margin-top: 230px;
+}
+.mobile-nav nav{
+    width: 100%;
+}
+.menu-mobile-display{
+    display: none;
+    list-style: none;
+    text-align: center;
+    background-color: white;
+    padding: 0;
+}
+.mobile-nav li{
+    display: block; 
+}
+.mobile-nav a{
+    display: block;
+    padding: 10px;
+    width: 100% - 20px;
+    
+    text-decoration: none;
+    color: #14233a;
+    font-size: 20px;   
+}
+.mobile-nav a:hover{
+    transition: 0.5s;
+    background-color: #ec7400;
+    color: white;
+}
+.wave{
+    height: 300px;
+    background-size: cover;
+    background-image: url('../assets/wave.svg');
+}
+.wave h1{
+    margin: 0;
+    padding-top: 40px;
+    text-align: center;
+    color: white;
+    font-size: 43px;
+}
+/*header*/
+
+@media( max-width:1080px){
+    .menu-content{
+        display: none;
+    }
+    .menu-mobile{
+        display: flex;
+        padding-top: 20px;
+    }
+    .menu-mobile img:hover{
+        cursor: pointer;
+    }
+    /*header*/
+}
